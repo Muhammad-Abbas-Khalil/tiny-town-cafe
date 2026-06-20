@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tiny Town Cafe — a cozy neighborhood cafe in Sebastopol, CA serving delicious breakfast, brunch, coffee, and fresh baked goods. Visit us today!">
+    <title>Tiny Town Cafe | Cozy Breakfast & Coffee in Sebastopol, CA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Tiny Town<span class="logo-accent"> Cafe</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Visit Us</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/cafe-exterior.png" alt="Tiny Town Cafe exterior" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <p class="hero-tagline">Welcome to</p>
+            <h1 class="hero-title">Tiny Town Cafe</h1>
+            <p class="hero-subtitle">A cozy neighborhood gem in Sebastopol, CA — serving up comfort food, great coffee,
+                and warm smiles since day one.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                <a href="#contact" class="btn btn-secondary">Find Us</a>
+            </div>
+            <div class="hero-badges">
+                <div class="badge">
+                    <span class="badge-icon">⭐</span>
+                    <span class="badge-text">4.6 Stars</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">💬</span>
+                    <span class="badge-text">200+ Reviews</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">❤️</span>
+                    <span class="badge-text">Local Favorite</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+                <span class="scroll-arrow"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/cafe-interior.png" alt="Inside Tiny Town Cafe" loading="lazy">
+                    <div class="about-image-badge">
+                        <span class="handwritten">Est. in Sebastopol</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A Little Cafe with a Big Heart</h2>
+                    <p class="about-text">
+                        Nestled in the heart of Sebastopol, Tiny Town Cafe is your neighborhood go-to for hearty
+                        breakfast, fresh-baked pastries, and expertly crafted coffee. We believe that the best meals are
+                        made with love, local ingredients, and a dash of small-town charm.
+                    </p>
+                    <p class="about-text">
+                        Whether you're grabbing a quick coffee on your morning commute or settling in for a leisurely
+                        weekend brunch, our friendly team is here to make you feel right at home. Come for the food,
+                        stay for the community.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🌿</span>
+                            <div>
+                                <h4>Locally Sourced</h4>
+                                <p>Fresh ingredients from Sonoma County farms</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">☀️</span>
+                            <div>
+                                <h4>Outdoor Seating</h4>
+                                <p>Enjoy the California sunshine on our patio</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🐕</span>
+                            <div>
+                                <h4>Dog Friendly</h4>
+                                <p>Furry friends welcome on our outdoor patio</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Serve</span>
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-desc">From hearty breakfasts to fresh salads and handcrafted drinks — there's
+                    something for everyone.</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="breakfast">🍳 Breakfast</button>
+                <button class="menu-tab" data-tab="lunch">🥗 Lunch</button>
+                <button class="menu-tab" data-tab="drinks">☕ Drinks</button>
+                <button class="menu-tab" data-tab="pastries">🧁 Pastries</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Breakfast Tab -->
+                <div class="menu-panel active" id="tab-breakfast">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/breakfast-sandwich.png" alt="Breakfast Sandwich" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Breakfast Sandwich</h3>
+                                    <span class="menu-price">$12.50</span>
+                                </div>
+                                <p>Eggs, bacon or ham, melted cheese & fresh spinach on a toasted croissant</p>
+                                <span class="menu-tag popular">Most Popular</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/breakfast-burrito.png" alt="Breakfast Burrito" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Breakfast Burrito</h3>
+                                    <span class="menu-price">$13.50</span>
+                                </div>
+                                <p>Scrambled eggs, potatoes, cheese, beans, avocado & house salsa wrapped in a flour
+                                    tortilla</p>
+                                <span class="menu-tag">Customer Favorite</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/eggs-toast.png" alt="Classic Eggs & Toast" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Classic Eggs & Toast</h3>
+                                    <span class="menu-price">$10.00</span>
+                                </div>
+                                <p>Two eggs any style with sourdough toast, butter & jam. Add bacon or sausage +$3</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/avocado-toast.png" alt="Avocado Toast" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Avocado Toast</h3>
+                                    <span class="menu-price">$11.00</span>
+                                </div>
+                                <p>Smashed avocado on sourdough with cherry tomatoes, everything seasoning & a poached
+                                    egg</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/pancake-stack.png" alt="Pancake Stack" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Pancake Stack</h3>
+                                    <span class="menu-price">$11.50</span>
+                                </div>
+                                <p>Three fluffy buttermilk pancakes with maple syrup, whipped butter & fresh berries</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/veggie-scramble.png" alt="Veggie Scramble" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Veggie Scramble</h3>
+                                    <span class="menu-price">$12.00</span>
+                                </div>
+                                <p>Scrambled eggs with seasonal veggies, feta cheese & herbs, served with toast</p>
+                                <span class="menu-tag vegan">Vegetarian</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lunch Tab -->
+                <div class="menu-panel" id="tab-lunch">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/turkey-sandwich.png" alt="Turkey & Avocado Sandwich" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Turkey & Avocado Sandwich</h3>
+                                    <span class="menu-price">$13.50</span>
+                                </div>
+                                <p>Roasted turkey, avocado, lettuce, tomato & herb aioli on fresh sourdough</p>
+                                <span class="menu-tag popular">Best Seller</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/garden-salad.png" alt="Garden Salad" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Garden Salad</h3>
+                                    <span class="menu-price">$11.00</span>
+                                </div>
+                                <p>Mixed greens, cucumber, cherry tomatoes, red onion & house vinaigrette. Add chicken
+                                    +$4</p>
+                                <span class="menu-tag vegan">Vegan Option</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/grilled-cheese.png" alt="Grilled Cheese & Soup" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Grilled Cheese & Soup</h3>
+                                    <span class="menu-price">$12.00</span>
+                                </div>
+                                <p>Classic grilled cheese on sourdough with a cup of our daily homemade soup</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/blt-wrap.png" alt="BLT Wrap" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>BLT Wrap</h3>
+                                    <span class="menu-price">$12.50</span>
+                                </div>
+                                <p>Crispy bacon, lettuce, tomato & ranch in a spinach tortilla with kettle chips</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/quinoa-bowl.png" alt="Quinoa Power Bowl" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Quinoa Power Bowl</h3>
+                                    <span class="menu-price">$13.00</span>
+                                </div>
+                                <p>Quinoa, roasted veggies, chickpeas, tahini dressing & pickled onions</p>
+                                <span class="menu-tag vegan">Vegan</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/soup-day.png" alt="Soup of the Day" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Soup of the Day</h3>
+                                    <span class="menu-price">$7.00</span>
+                                </div>
+                                <p>Ask about today's fresh homemade soup, served with a slice of sourdough bread</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks Tab -->
+                <div class="menu-panel" id="tab-drinks">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/latte-art.png" alt="Latte with latte art" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Cafe Latte</h3>
+                                    <span class="menu-price">$5.50</span>
+                                </div>
+                                <p>Espresso with steamed milk & beautiful latte art. Ask for oat, almond, or soy milk
+                                </p>
+                                <span class="menu-tag popular">Signature</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/smoothie.png" alt="Fresh fruit smoothie" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Fresh Fruit Smoothie</h3>
+                                    <span class="menu-price">$7.50</span>
+                                </div>
+                                <p>Mango, strawberry, banana & orange juice blended fresh. Add protein +$2</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/drip-coffee.png" alt="Drip Coffee" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Drip Coffee</h3>
+                                    <span class="menu-price">$3.50</span>
+                                </div>
+                                <p>Locally roasted, always fresh. Regular or decaf</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/cappuccino.png" alt="Cappuccino" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Cappuccino</h3>
+                                    <span class="menu-price">$5.00</span>
+                                </div>
+                                <p>Rich espresso topped with velvety steamed milk foam</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/iced-americano.png" alt="Iced Americano" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Iced Americano</h3>
+                                    <span class="menu-price">$4.50</span>
+                                </div>
+                                <p>Double shot espresso over ice with cold water. Bold and refreshing</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/chai-latte.png" alt="Chai Tea Latte" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Chai Tea Latte</h3>
+                                    <span class="menu-price">$5.50</span>
+                                </div>
+                                <p>Spiced chai with steamed milk. Available hot or iced</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastries Tab -->
+                <div class="menu-panel" id="tab-pastries">
+                    <div class="menu-grid">
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/blueberry-scone.png" alt="Blueberry Scone" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Blueberry Scone</h3>
+                                    <span class="menu-price">$4.00</span>
+                                </div>
+                                <p>Fresh-baked daily with real blueberries & a light glaze</p>
+                                <span class="menu-tag popular">Fan Favorite</span>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/butter-croissant.png" alt="Butter Croissant" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Butter Croissant</h3>
+                                    <span class="menu-price">$3.50</span>
+                                </div>
+                                <p>Flaky, buttery, golden perfection. Simple and classic</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/banana-muffin.png" alt="Banana Nut Muffin" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Banana Nut Muffin</h3>
+                                    <span class="menu-price">$4.00</span>
+                                </div>
+                                <p>Moist banana bread muffin loaded with walnuts</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/chocolate-cookie.png" alt="Chocolate Chip Cookie" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Chocolate Chip Cookie</h3>
+                                    <span class="menu-price">$3.00</span>
+                                </div>
+                                <p>Warm, gooey, and fresh from the oven. Pairs perfectly with a latte</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/cinnamon-roll.png" alt="Cinnamon Roll" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Cinnamon Roll</h3>
+                                    <span class="menu-price">$5.00</span>
+                                </div>
+                                <p>Soft, warm cinnamon roll with cream cheese icing. Made fresh every morning</p>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <div class="menu-card-image">
+                                <img src="images/seasonal-pie.png" alt="Seasonal Pie Slice" loading="lazy">
+                            </div>
+                            <div class="menu-card-body">
+                                <div class="menu-card-header">
+                                    <h3>Seasonal Pie Slice</h3>
+                                    <span class="menu-price">$5.50</span>
+                                </div>
+                                <p>Ask about today's selection — always made with local, seasonal fruit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Life at Tiny Town</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <p class="section-desc">A peek into the warmth, flavor, and character of our little cafe.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/cafe-exterior.png" alt="Tiny Town Cafe exterior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Our Storefront</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/breakfast-sandwich.png" alt="Breakfast sandwich" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Breakfast Sandwich</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/latte-art.png" alt="Latte art" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Handcrafted Coffee</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cafe-interior.png" alt="Cafe interior" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Cozy Interior</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/breakfast-burrito.png" alt="Breakfast burrito" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Breakfast Burrito</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/smoothie.png" alt="Fresh smoothie" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Fresh Smoothies</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What People Say</span>
+                <h2 class="section-title">Customer Reviews</h2>
+                <div class="reviews-rating-summary">
+                    <div class="stars-large">★★★★★</div>
+                    <span class="rating-number">4.6</span>
+                    <span class="rating-count">Based on 200+ Google Reviews</span>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">S</div>
+                        <div>
+                            <h4 class="review-name">Sarah M.</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"This place is an absolute gem! The breakfast burrito is hands down the best
+                        I've had in Sonoma County. The staff is so friendly and welcoming — it truly feels like a
+                        neighborhood hangout. We come here every weekend!"</p>
+                    <span class="review-date">2 weeks ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">J</div>
+                        <div>
+                            <h4 class="review-name">James R.</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Great little cafe with amazing coffee and pastries. The scones are
+                        fresh-baked and incredible. Love the cozy atmosphere and the outdoor patio is perfect on sunny
+                        mornings. Highly recommend!"</p>
+                    <span class="review-date">1 month ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">L</div>
+                        <div>
+                            <h4 class="review-name">Lisa K.</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Tiny Town Cafe never disappoints. The food is always fresh, portions are
+                        generous, and the prices are fair. My go-to is the breakfast sandwich on a croissant —
+                        absolutely delicious. The staff remembers your name!"</p>
+                    <span class="review-date">3 weeks ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">M</div>
+                        <div>
+                            <h4 class="review-name">Michael T.</h4>
+                            <div class="review-stars">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Charming little spot with really solid food. The pancakes are fluffy and the
+                        coffee is excellent. Can get a bit busy on weekends so arrive early! Dog-friendly patio is a
+                        huge plus for us."</p>
+                    <span class="review-date">1 month ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">A</div>
+                        <div>
+                            <h4 class="review-name">Anna P.</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"We discovered this cafe on a road trip and it was the highlight of our visit
+                        to Sebastopol! The avocado toast is perfection, and the latte was one of the best I've had. Such
+                        a warm, inviting little place."</p>
+                    <span class="review-date">2 months ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">D</div>
+                        <div>
+                            <h4 class="review-name">David W.</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"A true community cafe. Everyone knows each other, the food is homestyle and
+                        delicious, and the prices are reasonable. The seasonal pie is always a treat. This is what a
+                        small-town cafe should be!"</p>
+                    <span class="review-date">3 weeks ago</span>
+                </div>
+            </div>
+            <div class="reviews-cta">
+                <a href="https://www.google.com/maps/place/Tiny+Town+Cafe/@38.4735317,-122.8937609,17z/" target="_blank"
+                    rel="noopener noreferrer" class="btn btn-outline">Read More on Google →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Visit Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Come Say Hello</span>
+                <h2 class="section-title">Visit Us</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Sebastopol, CA<br>Sonoma County, California</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h3>Hours</h3>
+                            <div class="hours-list">
+                                <div class="hours-row">
+                                    <span>Monday – Friday</span>
+                                    <span>7:00 AM – 3:00 PM</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Saturday – Sunday</span>
+                                    <span>8:00 AM – 4:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Contact</h3>
+                            <p><a href="tel:+17078234600" class="phone-link">(707) 823-4600</a></p>
+                            <p>Give us a call or just walk in!</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <p>Follow Us</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Yelp">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.16 12.594l-4.995 1.433c-.96.276-1.74-.8-1.176-1.63l2.905-4.308a1.072 1.072 0 011.596-.206 7.26 7.26 0 012.035 3.237c.238.86-.476 1.166-1.365 1.474zM13.234 14.74l3.24 3.92c.546.66.144 1.438-.596 1.672a7.262 7.262 0 01-3.736.196c-.868-.2-1.056-.962-.842-1.89l1.002-4.588c.222-.96 1.386-1.016 1.932-.31zM9.6 12.882l-4.63 2.27c-.87.427-1.676-.24-1.532-1.148a7.225 7.225 0 011.665-3.508c.58-.678 1.35-.482 2.106.146l3.244 2.69c.756.628.476 1.256-.852 1.55zM10.32 10.2L7.818 6.858c-.562-.754-.112-1.596.78-1.77a7.227 7.227 0 013.81.402c.832.326.896 1.102.548 1.998l-1.636 4.21c-.378.974-1.334.944-1.8.502zM12.44 4.26V.708c0-.956.9-1.2 1.692-.85a7.258 7.258 0 012.78 2.528c.486.742.076 1.414-.832 1.748l-2.84 1.012c-.864.312-1.6-.042-1.6-.886z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.6114055457324!2d-122.8937609!3d38.4735317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80843cb6c379da59%3A0x4de5fa554c59bd00!2sTiny%20Town%20Cafe!5e0!3m2!1sen!2sus!4v1718911200000!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Tiny Town Cafe Location on Google Maps">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Tiny Town<span class="logo-accent"> Cafe</span></span>
+                    <p class="footer-tagline">Good food. Good coffee. Good people.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#contact">Visit Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tiny Town Cafe. All rights reserved.</p>
+                <p class="footer-credit">Sebastopol, California</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
